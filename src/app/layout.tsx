@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Matheus Pizza - A melhor pizzaria",
-  description: "A melhor pizzaria do Brasil",
+  title: "DevRestaurante",
+  description: "O melhor sistema de pedidos para o seu negocio",
 };
 
 export default function RootLayout({
