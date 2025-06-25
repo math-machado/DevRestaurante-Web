@@ -34,11 +34,8 @@ export default function Signup() {
     return (
         <>
             <div className={styles.containerCenter}>
-                <Image
-                    src={logoImg}
-                    alt='Logo da pizzaria'
-                />
 
+                <text className={styles.title1}>Dev<text className={styles.title2}>Restaurante</text></text>
 
                 <section className={styles.login}>
 

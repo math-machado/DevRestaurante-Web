@@ -6,6 +6,17 @@
   justify-content: center;
 }
 
+.title1{
+  font-size: 48px;
+  color: var(--white);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title2{
+  color: var(--red-900);
+  margin-left: -10px;
+}
+
 .login{
   margin-top: 24px;
   display: flex;

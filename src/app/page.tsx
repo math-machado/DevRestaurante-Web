@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
-import logoImg from '/public/logo.png'
+import logoImg from '/public/logo.svg'
 import Link from 'next/link'
 import { api } from '@/services/app'
 import { redirect } from 'next/navigation'
@@ -41,10 +41,9 @@ export default function Page() {
   return (
     <>
       <div className={styles.containerCenter}>
-        <Image
-          src={logoImg}
-          alt='Logo da pizzaria'
-        />
+
+        <text className={styles.title1}>Dev<text className={styles.title2}>Restaurante</text></text>
+
 
         <section className={styles.login}>
           <form action={handleLogin}>
