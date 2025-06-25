@@ -7,6 +7,7 @@ import { redirect } from 'next/navigation'
 import { cookies } from 'next/headers'
 
 export default function Page() {
+
   async function handleLogin(formData: FormData) {
     'use server'
 
@@ -38,6 +39,7 @@ export default function Page() {
 
     redirect('/dashboard')
   }
+
   return (
     <>
       <div className={styles.containerCenter}>
@@ -46,7 +48,7 @@ export default function Page() {
 
 
         <section className={styles.login}>
-          <form action={handleLogin}>
+          <form action={handleLogin} >
 
             <input
               type="email"
@@ -63,7 +65,7 @@ export default function Page() {
               className={styles.input}
             />
 
-            <button type='submit'>
+            <button type='submit' >
               Acessar
             </button>
           </form>

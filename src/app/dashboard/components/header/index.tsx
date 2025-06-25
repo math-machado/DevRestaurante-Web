@@ -12,7 +12,7 @@ export function Header() {
     const router = useRouter();
 
     async function handleLogOut() {
-        deleteCookie('session', {path: '/'})
+        deleteCookie('session', { path: '/' })
 
         router.replace('/')
     }
@@ -20,14 +20,7 @@ export function Header() {
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
                 <Link href={'/dashboard'}>
-                    <Image
-                        alt='Foto da logo'
-                        src={LogoImg}
-                        width={190}
-                        height={60}
-                        priority={true}
-                        quality={100}
-                    />
+                    <text className={styles.title1}>Dev<text className={styles.title2}>Restaurante</text></text>
                 </Link>
 
                 <nav>
